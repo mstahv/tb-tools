@@ -2,6 +2,10 @@
 
 A helper that automatically generates somewhat sane identifiers for components to help integration testing using real or simulated browsers. This includes tools like Vaadin TestBench, plain WebDriver, Gatling and JMeter.
 
+The add-on works by doing inspection with reflection for given classes and assigns field names as identifiers for each component that don't contain explicit identifier. This way you for example have sane identifiers for all your fields in e.g. an entity editor ui component and this makes creating integration tests, and possibly also theme building, much easier. 
+
+Note, that as the component uses runtime inspection to do the "magic", it is not suggested to be kept active for application with really high scalability needs.
+
 A simple use case can be seen in the projects tests, but you can also check out these example projects:
 
  * [tb-page-object](https://github.com/mstahv/tb-page-object/) - an example how to utilize Page Object pattern cleanly with this helper and Vaadin TestBench
