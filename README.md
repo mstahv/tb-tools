@@ -1,3 +1,6 @@
+[![Published on Vaadin  Directory](https://img.shields.io/badge/Vaadin%20Directory-published-00b4f0.svg)](https://vaadin.com/directory/component/tb-tools)
+[![Stars on vaadin.com/directory](https://img.shields.io/vaadin-directory/star/tb-tools.svg)](https://vaadin.com/directory/component/tb-tools)
+
 # tb-tools - helpers for integration testing Vaadin apps
 
 A helper that automatically generates somewhat sane identifiers for components to help integration testing using real or simulated browsers. This includes tools like Vaadin TestBench, plain WebDriver, Gatling and JMeter.
